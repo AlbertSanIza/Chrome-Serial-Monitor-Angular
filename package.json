@@ -1,10 +1,13 @@
 {
-  "name": "Chrome-Serial-Port",
-  "description": "Chrome Serial Port",
+  "name": "Chrome-Serial-Monitor-Angular",
+  "description": "Chrome Serial Monitor Angular",
   "version": "0.0.1",
-  "devDependencies": {
-    "angular":"latest",
-    "angular-route":"latest",
-    "bootstrap":"latest"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlbertSanIza/Chrome-Serial-Monitor-Angular.git"
+  },
+  "dependencies": {
+    "angular":"^1.4.7",
+    "bootstrap":"^3.3.5"
   }
 }

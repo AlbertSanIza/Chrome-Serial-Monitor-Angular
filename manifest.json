@@ -1,6 +1,6 @@
 {
-  "name": "Chrome-Serial-Port",
-  "description": "Chrome Serial Port",
+  "name": "Chrome-Serial-Monitor-Angular",
+  "description": "Chrome Serial Monitor Angular",
   "version": "0.0.1",
   "manifest_version": 2,
   "app": {
