@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MainApp" ng-csp>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chrome-Serial-App</title>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-controller="MainCtrl">
+    <div class="container-fluid">
+      <h1>Chrome-Serial-App</h1>
+      <table class="table">
+        <tr><th>Id</th><th>Port</th></tr>
+        <tr ng-repeat="Port in ChromeSerial.Ports"><td>{{$index}}</td><td>{{Port.path}}</td></tr>
+      </table>
+      <table class="table">
+        <tr><th>Connection ID</th><th>String Buffer</th><th>String Recieved</th></tr>
+        <tr><td>{{ChromeSerial.connectionId}}</td><td>{{ChromeSerial.readBuffer}}</td><td>{{ChromeSerial.readNow}}</td></tr>
+      </table>
+      <button ng-click="ConnectTo()">Connect!</button>
+    </div>
+</html>

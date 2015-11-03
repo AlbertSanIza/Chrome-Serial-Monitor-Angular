@@ -1,0 +1,10 @@
+{
+  "name": "Chrome-Serial-Port",
+  "description": "Chrome Serial Port",
+  "version": "0.0.1",
+  "devDependencies": {
+    "angular":"latest",
+    "angular-route":"latest",
+    "bootstrap":"latest"
+  }
+}
